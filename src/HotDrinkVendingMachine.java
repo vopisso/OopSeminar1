@@ -1,5 +1,6 @@
 import java.util.ArrayList;
 import java.util.List;
+import java.util.logging.Logger;
 
 public class HotDrinkVendingMachine extends VendingMachine{
 
@@ -27,6 +28,13 @@ public class HotDrinkVendingMachine extends VendingMachine{
             return result;
         } else {
             throw new IllegalStateException("Product not found");
+        }
+    }
+
+    Logger log = Logger.getLogger(HotDrinkVendingMachine.class.getName());
+    public void hotDrinkView(List<Product> list) {
+        for (Product item: list) {
+            log.info(String.valueOf(item));
         }
     }
 }

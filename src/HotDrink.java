@@ -13,8 +13,8 @@ public class HotDrink extends Drink{
 
     @Override
     public String toString() {
-        return String.format("\nProduct -> name: %s; cost: %.2f; type: drink; volume: %.2f liters; temperature:" +
-                        " %d'C\n", super.getName(), super.getCost(),
+        return String.format("Product -> name: %s; cost: %.2f; type: drink; volume: %.2f liters; temperature:" +
+                        " %d'C", super.getName(), super.getCost(),
                 super.getVolume(), this.temp);
 //        return  super.toString() + String.format("; temperature: %d'C", this.temp);
     }

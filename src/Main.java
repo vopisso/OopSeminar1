@@ -36,7 +36,9 @@ public class Main {
 
         HotDrinkVendingMachine hotDrinkVendingMachine = new HotDrinkVendingMachine(hotDrinkList);
 
-        log.info(hotDrinkVendingMachine.getProduct("latte", 0.25, 50).toString()
-                .replaceAll("[{\\[\\]}]", ""));
+//        log.info(hotDrinkVendingMachine.getProduct("latte", 0.25, 50).toString()
+//                .replaceAll("[{\\[\\]}]", ""));
+
+        hotDrinkVendingMachine.hotDrinkView(hotDrinkVendingMachine.getProduct("latte", 0.25, 50));
     }
 }
